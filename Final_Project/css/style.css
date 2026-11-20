@@ -19,9 +19,11 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows:  auto auto auto auto auto auto auto;
   grid-template-areas:
     "head head"
+    "Fall2026 Fall2026_img"
+    "Spring2026 Spring2026_img"
     "Fall2025 Fall2025_img"
     "Spring2025 Spring2025_img"
     "Fall2024 Fall2024_img"
@@ -33,9 +35,17 @@
 @media screen and (max-width: 600px) {
   .grid-container{
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas:
       "head"
+          "Fall2026"
+      "Fall2026_img"
+        "Spring2026"
+      "Spring2026_img"
+    "Fall2025"
+      "Fall2025_img"
+      "Spring2026"
+      "Spring2026_img"
       "Fall2025"
       "Fall2025_img"
       "Spring2025"
@@ -53,6 +63,12 @@
 }
 
 header { grid-area: head; }
+#Fall2026 { grid-area: Fall2026; }
+#Fall2026_img { grid-area: Fall2026_img; }
+#Spring2026 { grid-area: Spring2026; }
+#Spring2026_img { grid-area: Spring2026_img; }
+#Spring2026_2 { grid-area: Spring2026_2; }
+#Spring2026_img_2 { grid-area: Spring2026_img_2; }
 #Fall2025 { grid-area: Fall2025; }
 #Fall2025_img { grid-area: Fall2025_img; }
 #Spring2025 { grid-area: Spring2025; }
@@ -185,6 +201,12 @@ footer {
 }
 /* Grid placement */
 #Fall2025_video {
+  grid-area: Fall2025_img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Spring2026_video {
   grid-area: Fall2025_img;
   display: flex;
   justify-content: center;

@@ -21,6 +21,12 @@
     grid-template-rows: auto;
     grid-template-areas:
       "head"
+      "Fall2026_1"
+      "Fall2026_img_1"
+    "Fall2026_2"
+      "Fall2026_img_2"
+    "Fall2026_3"
+      "Fall2026_img_3"
        "Spring2026_1"
       "Spring2026_img_1"
     "Spring2026_2"
@@ -53,9 +59,11 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto ;
   grid-template-areas:
     "head head head"
+     "Fall2026_1 Fall2026_2 Fall2026_3"
+    "Fall2026_img_1 Fall2026_img_2 Fall2026_img_3"
     "Spring2026_1 Spring2026_2 Spring2026_3"
     "Spring2026_img_1 Spring2026_img_2 Spring2026_img_3"
     "Fall2025_1 Fall2025_2 Fall2025_3"
@@ -70,6 +78,23 @@
   }}
 
 header { grid-area: head; }
+#Fall2026_1 { grid-area: Fall2026_1; }
+#Fall2026_img_1 { grid-area: Fall2026_img_1; 
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Fall2026_2 { grid-area: Fall2026_2; }
+#Fall2026_img_2 { grid-area: Fall2026_img_2; 
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+}#Fall2026_3 { grid-area: Fall2026_3; }
+#Fall2026_img_3 { grid-area: Fall2026_img_3; 
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #Spring2026_1 { grid-area: Spring2026_1; }
 #Spring2026_img_1 { grid-area: Spring2026_img_1; 
     display: block;
